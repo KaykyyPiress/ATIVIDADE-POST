@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POSTs</title>
+    <style>
+      button{
+        text-align: center;
+      }
+      div{
+        text-align: center;
+        margin: 2px solid black;
+      }
+      h2{
+        margin: 2px solid black;
+      }
+    </style>
+</head>
+<body>
+
+  <a href="usuarios/cadastro.html"><button>CADASTRAR POST</button></a> 
+
+
+
+  <h2>Posts cadastrados:</h2>
+  
+  <%for (var i = 0; i < usuarios.length; i++){%>
+  <div>
+    <p>Titulo: <%= usuarios[i].db_titulo %></p>
+    <p>Resumo: <%= usuarios[i].db_resumo %></p>
+    <p>Conteudo: <%= usuarios[i].db_conteudo %></p>
+    <br>
+  </div>
+  <%}%>
+  
+  
+</body>
+</html>

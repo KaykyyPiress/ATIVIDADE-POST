@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POST</title>
+    <style>
+        form{
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        
+        body{
+            background-color: azure;
+        }
+
+        .envia{
+            margin-top: 8px;
+        }
+        .conteudo{
+            height: 50px;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Faça seu post</h1>
+
+<form action="/cadastrar_usuario" method="post">
+    Titulo:<br> <input type="text" name="titulo" > <br>
+    Resumo:<br> <input type="text" name="resumo"> <br>
+    Conteudo:<br> <input type="text" name="conteudo" class="conteudo"><br>
+    <input type="submit" value="Enviar" class="envia">
+</form>
+
+</body>
+</html>
